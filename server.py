@@ -1,14 +1,26 @@
 import sys, os
 from flask import Flask, render_template, url_for
 from flask_flatpages import FlatPages
+from flask_frozen import Freezer
 
+REPO_NAME = "sanjaysalem17.github.io"
 DEBUG = True
 FLATPAGES_AUTO_RELOAD = DEBUG
-STATIC_DIR = os.path.abspath('/')
+APP_DIR = os.path.dirname(os.path.abspath(__file__))
+
+def parent_dir(path):
+	return os.path.abspath(os.path.join(path, os.pardir))
+
+PROJECT_ROOT = parent_dir(APP_DIR)
+FREEZER_DESTINATION = PROJECT_ROOT
+FREEZER_BASE_URL = "http://localhost/{0}".format(REPO_NAME)
+FREEZER_REMOVE_EXTRA_FILES = False
+
 
 app = Flask(__name__)
 app.config.from_object(__name__)
 pages = FlatPages(app)
+freezer = Freezer(app)
 
 #URL Routing - Home Page
 @app.route("/")
@@ -41,4 +53,4 @@ def coding():
 
 # Main Function, Runs at http://0.0.0.0:8000
 if __name__ == "__main__":
-	app.run(port=8000)
+		freezer.freeze()
