@@ -3,19 +3,9 @@ from flask import Flask, render_template, url_for
 from flask_flatpages import FlatPages
 from flask_frozen import Freezer
 
-REPO_NAME = "sanjaysalem17.github.io"
 DEBUG = True
 FLATPAGES_AUTO_RELOAD = DEBUG
-APP_DIR = os.path.dirname(os.path.abspath(__file__))
-
-def parent_dir(path):
-	return os.path.abspath(os.path.join(path, os.pardir))
-
-PROJECT_ROOT = parent_dir(APP_DIR)
-FREEZER_DESTINATION = PROJECT_ROOT
-FREEZER_BASE_URL = "http://localhost/{0}".format(REPO_NAME)
-FREEZER_REMOVE_EXTRA_FILES = False
-
+STATIC_DIR = os.path.abspath('/')
 
 app = Flask(__name__)
 app.config.from_object(__name__)
@@ -29,7 +19,7 @@ def index():
 
 @app.route("/about/")
 def about():
-	return render_template('home-2.html', page=pages)
+	return render_template('about.html', page=pages)
 
 @app.route("/game-dev/")
 def game():
@@ -53,4 +43,7 @@ def coding():
 
 # Main Function, Runs at http://0.0.0.0:8000
 if __name__ == "__main__":
+	if len(sys.argv) > 2 and sys.argv[1] == "build":
 		freezer.freeze()
+	else:
+		app.run(port=8000)
