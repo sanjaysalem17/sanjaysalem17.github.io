@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh -d sanjaysalem17.github.io"
+    "deploy": "gh-pages -d sanjaysalem17.github.io"
   },
   "repository": {
     "type": "git",
