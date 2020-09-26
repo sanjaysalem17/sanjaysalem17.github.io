@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+
+	{% block content %}                    
+	<div id="fullpage">
+		<!-- Hero section -->
+		<div class="section fp-auto-height" id="hero-section">
+			<div class="hero-section-2 d-flex align-items-center set-bg" style="background-image: url('../static/img/slider/2.jpg');">
+				<div class="sp-container">
+					<div class="hero-content"  style="color:black">
+						<span>Animator, Programmer, & Graphic Designer</span>
+						<h2>I’m Sanjay Salem</h2>
+						<p style="color:black; font-weight:bolder; background-color:rgba(255, 255, 255, 1); backdrop-filter:blur(8px)">Hi! I'm a current junior undergraduate at Carnegie Mellon University, pursuing
+							a Bachelor's in Computer Science & Art, with a Minor in Animation and Special Effects. 
+							I love to mix animation and programming together to create
+							cool new types of art and creative code. 
+							Thanks for checking out my website!
+						</p>
+						
+					</div>
+				</div>
+			</div>
+			<div class="contact-link">
+				<p style="color:black;">Contact me</p>
+				<a href="{{url_for('contact')}}"><img src="{{url_for('static', filename='img/contact.jpg')}}" alt=""></a>
+			</div>
+		</div>
+		<!-- Hero section end -->
+
+		
+
+	{% endblock %}

@@ -43,7 +43,4 @@ def coding():
 
 # Main Function, Runs at http://0.0.0.0:8000
 if __name__ == "__main__":
-	if len(sys.argv) > 2 and sys.argv[1] == "build":
-		freezer.freeze()
-	else:
-		app.run(port=8000)
+	app.run()
