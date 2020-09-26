@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+	{% block content %}
+	<!-- portfilio single -->
+    <section class="portfilio-single set-bg" style="height:570px; background-image: url('../static/img/portfolio-single/graphicdes1.jpg');">
+        <div class="sp-container">
+            <div class="portfolio-single-content text-white">
+            
+				<h2 style="filter:brightness(100%)">Graphic Design</h2>
+				<p>A portfolio of the graphic design projects I've done throughout the years. Many of the following were created for a specific project I helped work on, and others are organization logos I created upon request of a certain organization.</p>
+				<p>Many of the logos link back to the project/organization page, so feel free to click on them to view my logo in action! Images are arranged in a slider format, so use the arrows on the right side to navigate (or your fingers if you have a touchscreen monitor!).</p>
+               
+            </div>
+            <br><br><br><br><br><br><br><br>
+		
+        </div>
+	</section>
+	<br><br>
+	<div class=container1>
+		<h1 style="color:darkgray;text-align:center;">LOGO DESIGN</h1>
+	</div>
+	<br><br>
+    <div class="portfolio-slider-warp">
+        <div class="portfolio-slider owl-carousel">
+			<a href="https://alagarinc.com"><img src="../static/img/portfolio/Alagar.jpg" alt="" style="filter:brightness(90%);height:75%;"></a>
+			<a href="https://www.gamecreation.org/games/octave"><img src="../static/img/portfolio/Octave1 (1).jpg" alt=""></a>
+            <a href="https://instagram.com/texas.aggie.green.society"><img src="../static/img/portfolio/Tags.jpg" alt=""  style="filter:brightness(90%)"></a>
+			<img src="../static/img/portfolio/rayar.jpg" alt="" style="filter:brightness(90%)">
+			<a href="https://www.gamecreation.org/games/sync_wars"><img src="../static/img/portfolio/Sync_Wars (1).jpg" alt=""></a>
+            <a href="https://www.gamecreation.org/games/danger_dancer"><img src="../static/img/portfolio-single/Danger.jpg" alt="" style="filter:brightness(90%)"></a>
+            <img src="../static/img/portfolio/Not_Kids_Anymore (1).jpg" alt="">
+			<a href="https://www.gamecreation.org/games/starlight"><img src="../static/img/portfolio/Starlogo.jpg" alt="" style="filter:brightness(90%)"></a>
+			<img src="../static/img/portfolio/Grassftlogo (1).jpg" alt="">
+			<a href="https://www.naturalcaremd.com/"><img src="../static/img/portfolio/Nsmd.jpg" alt="" style="filter:brightness(90%)"></a>
+			<img src="../static/img/portfolio/Kmc.jpg" alt="" style="filter:brightness(90%)">
+
+        </div>
+        <div class="owl-nav">
+            <div class="owl-prev">prev</div>
+            <div class="owl-next">next</div>
+        </div>
+	</div>
+    
+	<!-- Portfolio single end -->
+    
+	
+
+	
+ 
+
+	<!-- Banner Section -->
+	<section class="banner-section set-bg" style="background-image: url(../static/img/banner-bg.jpg);">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9">
+					<h2>Need a logo designer? Get in touch</h2>
+				</div>
+				<div class="col-lg-3 text-lg-right text-left">
+					<div class="site-btn"><span>
+                        <a href="{{url_for('contact')}}" style="color:white">Send a Request</a></span></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Banner Section end -->
+
+	{% endblock %}

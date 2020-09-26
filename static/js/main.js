@@ -55,7 +55,7 @@ $(window).on('load', function() {
 	--------------------*/
 	$('.set-bg').each(function() {
 		var bg = $(this).data('setbg');
-		$(this).css('background-image', 'url(' + bg + ')');
+		$(this).css('background-image', 'url(/' + bg + ')');
 	});
 
 
@@ -137,20 +137,7 @@ $(window).on('load', function() {
 	/*------------------
 		Fullpage js
 	--------------------*/
-	if($('#fullpage').length > 0 ) {
-		$('#fullpage').fullpage({
-			//options here
-			autoScrolling:false,
-			scrollHorizontally: true,
-			easing: 'easeInOutCubic',
-			easingcss3: 'ease',
-			fitToSection: false,
-			scrollBar: true,
-			navigation: true,
-			navigationPosition: 'right',
-			responsiveWidth: 991,
-		});
-	}
+	
 
 
 })(jQuery);

@@ -1,73 +1,9 @@
-<!DOCTYPE html>
-<html lang="zxx">
-<head>
-	<title>Sanjay Salem - Portfolio</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="Porto Photo Gallery HTML Template">
-	<meta name="keywords" content="porto, photo, html">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Favicon -->
-	<link href="img/favicon.ico" rel="shortcut icon"/>
+{% extends "base.html" %}
 
-	<!-- Google Font -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
-	<link rel="stylesheet" href="css/fullpage.min.css"/>
-	<link rel="stylesheet" href="css/magnific-popup.css"/>
-
-	<!-- Main Stylesheets -->
-	<link rel="stylesheet" href="css/style.css"/>
-
-
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
-</head>
-<body>
-	<!-- Page Preloder -->
-	<div id="preloder">
-		<div class="loader"></div>
-	</div>
-
-	<!-- Header Section -->
-	<header class="header-section" style="background-color:rgba(0, 0, 0, 0.4); backdrop-filter:blur(8px)">
-		<div class="header-warp">
-			<!-- logo -->
-			<a href="index.html" class="site-logo">
-				<img src="img/logo.png" alt="">
-			</a>
-			<div class="header-social">
-				<a href="https://www.linkedin.com/in/sanjay-salem-766b89173/"><i class="fa fa-linkedin-square"></i></a>
-				<a href="https://github.com/sanjaysalem17"><i class="fa fa-github"></i></a>
-				<a href="https://instagram.com/sanjaysalem17"><i class="fa fa-instagram"></i></a>
-				<a href="https://www.youtube.com/sanjaysalem17"><i class="fa fa-youtube"></i></a>
-			</div>
-			<div class="nav-switch">
-				<i class="fa fa-bars"></i>
-			</div>
-			<!-- menu -->
-			<ul class="main-menu">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="home-2.html">About</a></li>
-				<li><a href="coding.html">Coding</a></li>
-				<li><a href="game.html">Game Design</a></li>
-				<li><a href="graphic.html">Graphic Design</a></li>
-				<li><a href="animation.html">Animation</a></li>
-				<li style="color:white;">|</li style="color:white;">
-				<li><a href="contact.html">Resume</a></li>
-			</ul>
-		</div>
-	</header>
-	<!-- Header Section end-->
+{% block content %}
 
 	<!-- portfilio single -->
-    <section class="portfilio-single set-bg" data-setbg="img/tomSneak.png">
+    <section class="portfilio-single set-bg" style="background-image: url('../static/img/tomSneak.png');">
         <div class="sp-container">
             <div class="portfolio-single-content text-white">
             
@@ -117,13 +53,13 @@
 		
 		
 		<div class=content>
-			<img src="img/anim/targetAcq.gif" alt="" width=225px height=225px>
+			<img src="../static/img/anim/targetAcq.gif" alt="" width=225px height=225px>
 			<h3 style="color:white;">Target Acquired</h3>
 			<p>Fall 2019</p>
 		</div>
 		
 		<div class=content>
-			<img src="img/anim/robotohorse.gif" alt="" width=225px height=225px>
+			<img src="../static/img/anim/robotohorse.gif" alt="" width=225px height=225px>
 			<h3 style="color:white;">Roboto Horse</h3>
 			<p>Spring 2019</p>
 		</div>
@@ -166,18 +102,18 @@
 
 		<div class=row>
 		<div class=content>
-			<img src="img/tomSneak.png" alt="" height=225px>
+			<img src="../static/img/tomSneak.png" alt="" height=225px>
 			<h3 style="color:white;">Sneaky Tom</h3>
 			<p>Fall 2020 | Maya</p>
 		</div>
 		
 		<div class=content>
-			<img src="img/anim/Exam Season.png" alt="" height=225px>
+			<img src="../static/img/anim/Exam Season.png" alt="" height=225px>
 			<h3 style="color:white;">Exam Season</h3>
 			<p>Fall 2018 | Blender</p>
 		</div>
 		<div class=content>
-			<img src="img/anim/Meditation.jpg" alt="" height=225px>
+			<img src="../static/img/anim/Meditation.jpg" alt="" height=225px>
 			<h3 style="color:white;">Meditation</h3>
 			<p>Fall 2018 | Blender</p>
 		</div>
@@ -190,34 +126,4 @@
     
 	<!-- Portfolio single end -->
     
-	
-
-	
- 
-
-	
-
-	<!-- Footer Section -->
-	<footer>
-			<div style='text-align: center; color:rgb(75, 75, 75)'>
-
-
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-
-		</div>
-	</footer>
-	<!-- Footer Section end-->
-
-
-	<!--====== Javascripts & Jquery ======-->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/mixitup.min.js"></script>
-	<script src="js/masonry.pkgd.min.js"></script>
-	<script src="js/fullpage.min.js"></script>
-	<script src="js/main.js"></script>
-
-	</body>
-</html>
+{% endblock %}
