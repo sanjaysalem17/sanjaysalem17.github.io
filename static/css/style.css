@@ -465,11 +465,26 @@ p {
 	width: 350px;
 	height: 310px;
 	margin: -65px 0px -10px 0px;
+	transform: scale(1, 1);
+	-webkit-transform: scale(1, 1);
+	-moz-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
+	transition: transform 0.5s, ease-in-out;  
+	-webkit-transition: transform 0.5s ease-in-out;
+	-moz-transition: transform 0.5s ease-in-out;
+	-o-transition: transform 0.5s ease-in-out;
 	
 }
 
 .crop img:hover {
-	transform: scale(1.1, 1.1)
+	transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	-moz-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);
+	transition: transform 0.5s, ease-in-out;  
+	-webkit-transition: transform 0.5s ease-in-out;
+	-moz-transition: transform 0.5s ease-in-out;
+	-o-transition: transform 0.5s ease-in-out;
 }
 .crop1 {
 	width: 320px;
@@ -484,8 +499,12 @@ p {
 	margin: -50px 0px -10px 0px;
 	transform: scale(1, 1);
 	-webkit-transform: scale(1, 1);
+	-moz-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
 	transition: transform 0.5s, ease-in-out;  
 	-webkit-transition: transform 0.5s ease-in-out;
+	-moz-transition: transform 0.5s ease-in-out;
+	-o-transition: transform 0.5s ease-in-out;
 	
 }
 
@@ -494,6 +513,12 @@ p {
 	-webkit-transform: scale(1.1, 1.1);
 	transition: transform 0.5s, ease-in-out;  
 	-webkit-transition: transform 0.5s ease-in-out;
+	-moz-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);
+	transition: transform 0.5s, ease-in-out;  
+	-webkit-transition: transform 0.5s ease-in-out;
+	-moz-transition: transform 0.5s ease-in-out;
+	-o-transition: transform 0.5s ease-in-out;
 }
 
 
@@ -511,8 +536,12 @@ p {
 	margin: -42px 0px -10px 0px;
 	transform: scale(1, 1);
 	-webkit-transform: scale(1, 1);
+	-moz-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
 	transition: transform 0.5s, ease-in-out;  
 	-webkit-transition: transform 0.5s ease-in-out;
+	-moz-transition: transform 0.5s ease-in-out;
+	-o-transition: transform 0.5s ease-in-out;
 	
 }
 
@@ -521,6 +550,12 @@ p {
 	-webkit-transform: scale(1.1, 1.1);
 	transition: transform 0.5s, ease-in-out;  
 	-webkit-transition: transform 0.5s ease-in-out;
+	-moz-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);
+	transition: transform 0.5s, ease-in-out;  
+	-webkit-transition: transform 0.5s ease-in-out;
+	-moz-transition: transform 0.5s ease-in-out;
+	-o-transition: transform 0.5s ease-in-out;
 }
 .crop3 {
 	width: 320px;
@@ -536,8 +571,12 @@ p {
 	margin: -70px 0px -10px 0px;
 	transform: scale(1, 1);
 	-webkit-transform: scale(1, 1);
+	-moz-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
 	transition: transform 0.5s, ease-in-out;  
 	-webkit-transition: transform 0.5s ease-in-out;
+	-moz-transition: transform 0.5s ease-in-out;
+	-o-transition: transform 0.5s ease-in-out;
 	
 }
 
@@ -546,6 +585,12 @@ p {
 	-webkit-transform: scale(1.1, 1.1);
 	transition: transform 0.5s, ease-in-out;  
 	-webkit-transition: transform 0.5s ease-in-out;
+	-moz-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);
+	transition: transform 0.5s, ease-in-out;  
+	-webkit-transition: transform 0.5s ease-in-out;
+	-moz-transition: transform 0.5s ease-in-out;
+	-o-transition: transform 0.5s ease-in-out;
 }
   
 .row > .column { 
