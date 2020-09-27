@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>HW2</title>
+        <link rel="stylesheet" href='/static/css/calculator.css'>
+        <script src="/static/js/calculator.js"></script>
+    </head>
+    <input id='calc-display' type="text" value="0" readonly />
+    <div class='row'>
+        <button class='number-key' id="calc-key-7" onclick="doMath(7, '', true)">7</button>
+        <button class='number-key' id="calc-key-8" onclick="doMath(8, '', true)">8</button>
+        <button class='number-key' id='calc-key-9' onclick="doMath(9, '', true)">9</button>
+        <button class='op-key' id='calc-plus' onclick="doMath(0, 'plus', false)">&plus;</button>
+    </div>
+    <div class='row'>
+        <button class='number-key' id="calc-key-4" onclick="doMath(4, '', true)">4</button>
+        <button class='number-key' id="calc-key-5" onclick="doMath(5, '', true)">5</button>
+        <button class='number-key' id='calc-key-6' onclick="doMath(6, '',true)">6</button>
+        <button class='op-key' id='calc-minus' onclick="doMath(0, 'minus', false)">&minus;</button>
+    </div>
+    <div class='row'>
+        <button class='number-key' id="calc-key-1" onclick="doMath(1, '',true)">1</button>
+        <button class='number-key' id="calc-key-2" onclick="doMath(2, '', true)">2</button>
+        <button class='number-key' id='calc-key-3' onclick="doMath(3, '', true)">3</button>
+        <button class='op-key' id='calc-times' onclick="doMath(0, 'times', false)">&times;</button>
+    </div>
+    <div class='row'>
+        <button class='op-key' id="neg" onclick="singOp('negate')">&plusmn;</button>
+        <button class='number-key' id="calc-key-0" onclick="doMath(0, '', true)">0</button>
+        <button class='op-key' id='calc-equals' onclick="doMath(0, 'equals', false)">&equals;</button>
+        <button class='op-key' id='calc-divide' onclick="doMath(0, 'divide', false)">&divide;</button>
+    </div>
+    <div class='row'>
+        <button class='op-key' id="clear" onclick="doMath(0, 'clear', false)">C</button>
+        <button class='op-key' id="mod" onclick="doMath(0, 'mod', false)">&percnt;</button>
+        <button class='op-key' id="square" onclick="singOp('square')">&sup2;</button>
+        <button class='op-key' id="square" onclick="singOp('sqrt')">&radic;</button>
+    </div>
+    
+</html>
