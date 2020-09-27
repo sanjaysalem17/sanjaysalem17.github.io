@@ -3,7 +3,22 @@ var curr = 0
 var prevop = "plus"
 var prevbutton = false
 var prevequals = false
+var dark = true
 
+
+function theme() {
+    if (dark) {
+        document.documentElement.style.backgroundColor = "white";
+        document.getElementById('calc-display').style.backgroundColor = "rgb(0, 116, 161)";
+        dark = false;
+        //console.log(dark)
+    } else {
+        document.documentElement.style.backgroundColor = "rgb(22, 22, 22)";
+        document.getElementById('calc-display').style.backgroundColor = "rgb(0, 25, 49)";
+        dark = true; 
+        //console.log(dark);
+    }
+}
 function singOp(op) {
     if (prevequals) {
         if (op == 'negate') prev *= -1
