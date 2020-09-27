@@ -42,7 +42,7 @@ function operate() {
                 curr = 0
                 alert("Arithmetic Error: Divide by Zero")
             }
-            else {prev /= curr}
+            else { prev /= curr }
             break
         default:
             console.log('')
