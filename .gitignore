@@ -4,7 +4,6 @@ env/
 *~
 .DS_Store
 node_modules/
-.server.py
 *.json
 *.py
 build/
