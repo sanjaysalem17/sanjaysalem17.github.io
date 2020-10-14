@@ -26,6 +26,43 @@
 	<script src="/static/js/mixitup.min.js"></script>
 	<script src="/static/js/masonry.pkgd.min.js"></script>
 	<script src="/static/js/main.js"></script>
+	<script>
+		var i = 0
+		var j = 0
+		let time = 0
+		var start = "|"
+		var txt = "I’m Sanjay Salem!"
+		var speed = 50
+		function initial() {
+			if (j < 7) {
+			  if (j % 2) {
+				document.getElementById("demo").innerHTML = start
+			} else {
+				document.getElementById("demo").innerHTML = ""
+			}
+			j++
+			setTimeout(initial, speed*6)
+		  } else if (i < txt.length) {
+			  let str = document.getElementById("demo").innerHTML
+			  let prev = str.substring(0, str.length-1)
+				  document.getElementById("demo").innerHTML = prev + txt.charAt(i) + start
+				i++
+				setTimeout(initial, speed*2)
+		  } else {
+				  
+			  if (time % 2 == 0) {
+				  let str = document.getElementById("demo").innerHTML
+				  let prev = str.substring(0, str.length-1)
+					  document.getElementById("demo").innerHTML = prev
+			  } else {
+					  document.getElementById("demo").innerHTML += start
+			  }
+			  time = (time+1)%2
+			  setTimeout(initial, speed*6)
+		  }
+		}
+		window.onload = initial
+		</script>
 
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -77,7 +114,7 @@
 				<div class="sp-container">
 					<div class="hero-content"  style="color:black">
 						<span>Animator, Programmer, & Graphic Designer</span>
-						<h2>I’m Sanjay Salem!</h2>
+						<h2 id="demo"></h2>
 						<p style="color:black; font-weight:bolder; background-color:rgba(255, 255, 255, 1); backdrop-filter:blur(8px)">Hi! I'm a current junior undergraduate at Carnegie Mellon University, pursuing
 							a Bachelor's in Computer Science & Art, with a Minor in Animation and Special Effects. 
 							I love to mix animation and programming together to create
