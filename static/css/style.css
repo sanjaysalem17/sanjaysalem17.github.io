@@ -603,7 +603,7 @@ p {
 
 .crop4 img {
 	width: 800px;
-	height: 400px;
+	height: 200px;
 	margin: -70px 0px -10px 0px;
 	transform: scale(1, 1);
 	-webkit-transform: scale(1, 1);
