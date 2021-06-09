@@ -592,6 +592,42 @@ p {
 	-moz-transition: transform 0.5s ease-in-out;
 	-o-transition: transform 0.5s ease-in-out;
 }
+
+.crop4 {
+	width: 320px;
+	height: 170px;
+	overflow: hidden;
+	align-content: center;
+}
+
+
+.crop4 img {
+	width: 1900px;
+	height: 450px;
+	margin: -70px 0px -10px 0px;
+	transform: scale(1, 1);
+	-webkit-transform: scale(1, 1);
+	-moz-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
+	transition: transform 0.5s, ease-in-out;  
+	-webkit-transition: transform 0.5s ease-in-out;
+	-moz-transition: transform 0.5s ease-in-out;
+	-o-transition: transform 0.5s ease-in-out;
+	
+}
+
+.crop4 img:hover {
+	transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	transition: transform 0.5s, ease-in-out;  
+	-webkit-transition: transform 0.5s ease-in-out;
+	-moz-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);
+	transition: transform 0.5s, ease-in-out;  
+	-webkit-transition: transform 0.5s ease-in-out;
+	-moz-transition: transform 0.5s ease-in-out;
+	-o-transition: transform 0.5s ease-in-out;
+}
   
 .row > .column { 
 	padding: 10px; 
