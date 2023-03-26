@@ -31,35 +31,34 @@
 		var j = 0
 		let time = 0
 		var start = "|"
-		var txt = "I’m Sanjay Salem!"
+		var txt = "I'm Sanjay Salem!"
 		var speed = 50
 		function initial() {
 			if (j < 7) {
-			  if (j % 2) {
-				document.getElementById("demo").innerHTML = start
-			} else {
-				document.getElementById("demo").innerHTML = '&nbsp;'
-			}
-			j++
-			setTimeout(initial, speed*6)
-		  } else if (i < txt.length) {
-			  let str = document.getElementById("demo").innerHTML
-			  let prev = str.substring(0, str.length-1)
-				  document.getElementById("demo").innerHTML = prev + txt.charAt(i) + start
+				if (j % 2) {
+					document.getElementById("demo").innerHTML = start
+				} else {
+					document.getElementById("demo").innerHTML = '&nbsp;'
+				}
+				j++
+				setTimeout(initial, speed*6)
+			} else if (i < txt.length) {
+				let str = document.getElementById("demo").innerHTML
+				let prev = str.substring(0, str.length-1)
+				document.getElementById("demo").innerHTML = prev + txt.charAt(i) + start
 				i++
 				setTimeout(initial, speed*2)
-		  } else {
-				  
-			  if (time % 2 == 0) {
-				  let str = document.getElementById("demo").innerHTML
-				  let prev = str.substring(0, str.length-1)
-					  document.getElementById("demo").innerHTML = prev
-			  } else {
-					  document.getElementById("demo").innerHTML += start
-			  }
-			  time = (time+1)%2
-			  setTimeout(initial, speed*8)
-		  }
+			} else {	
+				if (time % 2 == 0) {
+					let str = document.getElementById("demo").innerHTML
+					let prev = str.substring(0, str.length-1)
+						document.getElementById("demo").innerHTML = prev
+				} else {
+						document.getElementById("demo").innerHTML += start
+				}
+				time = (time+1)%2
+				setTimeout(initial, speed*8)
+			}
 		}
 		window.onload = initial
 		</script>
@@ -100,6 +99,7 @@
 				<li><a href="/game-dev/">Game Design</a></li>
 				<li><a href="/graphic-design/">Graphic Design</a></li>
 				<li><a href="/animation/">Animation</a></li>
+				<li><a href="https://sksamurai.etsy.com"></a></li>
 				<li style="color:white;">|</li style="color:white;">
 				<li><a href="/contact/">Resume</a></li>
 			</ul>
@@ -113,12 +113,13 @@
 			<div class="hero-section-2 d-flex align-items-center set-bg" style="background-image: url('../static/img/index/2.jpg');">
 				<div class="sp-container">
 					<div class="hero-content"  style="color:black">
-						<span>Animator, Programmer, & Graphic Designer</span>
+						<span>Animator, Programmer, & Visual Storyteller</span>
 						<h2 id="demo"></h2>
-						<p style="color:black; font-weight:bolder; background-color:rgba(255, 255, 255, 1); backdrop-filter:blur(8px)">Hi! I'm a current junior undergraduate at Carnegie Mellon University, pursuing
-							a Bachelor's in Computer Science & Art, with a Minor in Animation and Special Effects. 
+						<p style="color:black; font-weight:bolder; background-color:rgba(255, 255, 255, 1); backdrop-filter:blur(8px)">
+							Hi! I'm a current Software Engineer at Apple, and an alumnus of Carnegie Mellon University, where I received a
+							Bachelor's in Computer Science & Art, along with a Minor in Animation and Special Effects. 
 							I love to mix animation and programming together to create
-							cool new types of art and creative code. 
+							cool new types of art and creative code, as well as making visual art and small animation projects on the side. 
 							Thanks for checking out my website!
 						</p>
 						
