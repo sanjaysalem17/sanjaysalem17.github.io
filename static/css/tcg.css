@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(22,22,22);
+}
+
+
+.is-hidden {
+ display: none; 
+}
+
+label, h1 {
+  color: grey;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+a {
+  color: lightblue;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.card {
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+}
