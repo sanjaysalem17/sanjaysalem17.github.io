@@ -7,6 +7,10 @@ body {
  display: none; 
 }
 
+.anchor {
+  margin-left: 50%;
+}
+
 label, h1 {
   color: grey;
   font-family: Arial, sans-serif;
@@ -40,4 +44,5 @@ a:active {
   font-family: Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
+  margin-left: 20%;
 }
