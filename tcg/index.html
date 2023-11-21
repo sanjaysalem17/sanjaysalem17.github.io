@@ -4,30 +4,6 @@
     <style>
       .is-hidden { display: none; }
     </style>
-    <script type="text/javascript">
-      let typingTimer;
-      let typeInterval = 500;
-      let searchInput = document.getElementById('searchbox');
-
-      searchInput.addEventListener('keyup', () => {
-        clearTimeout(typingTimer);
-        typingTimer = setTimeout(liveSearch, typeInterval);
-      });
-
-      function liveSearch() {
-        let cards = document.querySelectorAll('.card');
-        let search_query = document.getElementById("searchbox").value;
-
-        for (var i = 0; i < cards.length; i++) {
-          if (cards[i].textContent.toLowerCase().includes(search_query.toLowerCase())) {
-            cards[i].classList.remove("is-hidden");
-          } else {
-            cards[i].classList.add("is-hidden");
-          }
-        }
-      }
-        
-    </script>
     <h1>List of Cards</h1>
   </head>
   <body>
@@ -53,5 +29,28 @@
       <span class="is-hidden">demon slayer</span>
       <span class="is-hidden">kimetsu no yaiba</span>
     </div>
+    <script>
+      let typingTimer;
+      let typeInterval = 500;
+      let searchInput = document.getElementById('searchbox');
+      
+      searchInput.addEventListener('keyup', () => {
+        clearTimeout(typingTimer);
+        typingTimer = setTimeout(liveSearch, typeInterval);
+      });
+      
+      function liveSearch() {
+        let cards = document.querySelectorAll('.card');
+        let search_query = document.getElementById("searchbox").value;
+      
+        for (var i = 0; i < cards.length; i++) {
+          if (cards[i].textContent.toLowerCase().includes(search_query.toLowerCase())) {
+            cards[i].classList.remove("is-hidden");
+          } else {
+            cards[i].classList.add("is-hidden");
+          }
+        }
+      }
+    </script>
   </body>
 </html>
