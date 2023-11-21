@@ -8,7 +8,7 @@ body {
 }
 
 .anchor {
-  margin-left: 50%;
+  margin-left: 20%;
 }
 
 label, h1 {
@@ -44,5 +44,5 @@ a:active {
   font-family: Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
-  margin-left: 20%;
+  margin-left: 30%;
 }
