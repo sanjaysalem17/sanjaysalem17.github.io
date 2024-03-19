@@ -640,7 +640,7 @@ p {
 .crop5 img {
 	width: 420px;
 	height: 220px;
-	margin: -10px 0px -10px -50px;
+	margin: -10px 0px -10px 0px;
 	transform: scale(1, 1);
 	-webkit-transform: scale(1, 1);
 	-moz-transform: scale(1, 1);
