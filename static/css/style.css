@@ -628,7 +628,43 @@ p {
 	-moz-transition: transform 0.5s ease-in-out;
 	-o-transition: transform 0.5s ease-in-out;
 }
-  
+ 
+.crop5 {
+	width: 320px;
+	height: 170px;
+	overflow: hidden;
+	align-content: center;
+}
+
+
+.crop5 img {
+	width: 420px;
+	height: 220px;
+	margin: -10px 0px -10px -50px;
+	transform: scale(1, 1);
+	-webkit-transform: scale(1, 1);
+	-moz-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
+	transition: transform 0.5s, ease-in-out;  
+	-webkit-transition: transform 0.5s ease-in-out;
+	-moz-transition: transform 0.5s ease-in-out;
+	-o-transition: transform 0.5s ease-in-out;
+	
+}
+
+.crop5 img:hover {
+	transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	transition: transform 0.5s, ease-in-out;  
+	-webkit-transition: transform 0.5s ease-in-out;
+	-moz-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);
+	transition: transform 0.5s, ease-in-out;  
+	-webkit-transition: transform 0.5s ease-in-out;
+	-moz-transition: transform 0.5s ease-in-out;
+	-o-transition: transform 0.5s ease-in-out;
+}
+
 .row > .column { 
 	padding: 10px; 
 } 
